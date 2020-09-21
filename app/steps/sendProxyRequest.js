@@ -58,7 +58,7 @@ function sendProxyRequest(Container) {
             // bodyContent is not json-format
           }
         }
-        proxyReq.setHeader('Content-Length', Buffer.byteLength(body));
+        //proxyReq.setHeader('Content-Length', Buffer.byteLength(body));
         proxyReq.write(body);
       }
       proxyReq.end();
